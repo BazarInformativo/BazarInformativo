@@ -1,0 +1,59 @@
+html {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 576px) {
+    html {
+        font-size: 16px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    html {
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    html {
+        font-size: 28px;
+    }
+}
+
+body {
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Ubuntu", "Helvetica Neue", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    font-style: normal;
+    font-weight: 400;
+}
+
+#titleContainer {
+    margin: 0px;
+}
+
+#sb-title {
+    font-size: 25px;
+    top: 53%;
+}
+
+#sb-subtitle {
+    font-size: 20px;
+    top: 75%;
+}
+
+#sb-head titleContainer {
+    height: inherit;
+}
+
+#sb-avatar {
+    top: 5%;
+}
+
+#sb-arrow {
+    right: 200%;
+}
+
+#aboutus-card {
+    top: 100%;
+}
