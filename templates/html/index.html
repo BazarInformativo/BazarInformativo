@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es" ondblclick="Metro.sidebar.close('#sb1'); return false;">
+<!--Author -- github.com/jodagito-->
 
 <head>
     <meta charset="utf-8">
@@ -9,12 +10,12 @@
     <title>Bazar Informativo - Inicio</title>
 </head>
 
-<body>
+<body class="shifted-content">
     <!--Sidebar menu and application bar creation.
 
-            Sidebar menu has three options, Home, Editions and Contact.   
-        -->
-    <div class="app-bar pos-absolute bg-lightRed z-1" data-role="appbar" id="app-bar" data-role-appbar="true">
+        Sidebar menu has three options, Home, Editions and Contact.   
+    -->
+    <div class="app-bar pos-relative bg-lightRed z-1" data-role="appbar" id="app-bar" data-role-appbar="true">
         <aside class="sidebar" data-role="sidebar" data-toggle="#sidebar-toggle" id="sb1" data-shift=".shifted-content">
             <div class="sidebar-header bg-red" id="sb-head">
                 <a href="/" class="fg-white sub-action" onclick="Metro.sidebar.close('#sb1'); return false;">
@@ -24,41 +25,42 @@
                     <img data-role="gravatar" data-email="elbazarinformativo@gmail.com">
                 </div>
                 <span class="title" id="sb-title"><b>Bazar Informativo</b></span>
-                <span class="subtitle" id="sb-subtitle">Periódico mensual</span>
+                <span class="subtitle" id="sb-subtitle">Un periódico comunitario</span>
             </div>
             <ul class="sidebar-menu bg-white">
-                <li><a><span class="mif-home icon"></span>Inicio</a></li>
+                <li><a href="index.html"><span class="mif-home icon"></span>Inicio</a></li>
                 <li class="divider"></li>
-                <li><a><span class="mif-books icon"></span>Ediciones</a></li>
+                <li><a href="editions.html"><span class="mif-books icon"></span>Ediciones</a></li>
                 <li class="divider"></li>
-                <li><a><span class="mif-contacts-mail icon"></span>Contacto</a></li>
+                <li><a href="contact.html"><span class="mif-contacts-mail icon"></span>Contacto</a></li>
                 <li class="divider"></li>
             </ul>
         </aside>
         <button class="shifted-content app-bar-item c-pointer" id="sidebar-toggle">
-                <span class="mif-menu fg-white mif-3x"></span>
-            </button>
+            <span class="mif-menu fg-white mif-3x"></span>
+        </button>
         <div class="shifted-content">
-            <h1 class="text-center display3 fg-black" id="titleContainer">El Bazar Informativo</h1>
+            <h1 class="text-center display3 fg-black" id="titleContainer">BAZAR INFORMATIVO</h1>
         </div>
     </div>
     <!--Information about the page.
-            
-            About us and History sections are here.
-        -->
-    <div class="card image-header" id="aboutus-card">
+                
+        About us and History sections are here.
+    -->
+    <div class="shifted-content card image-header" id="aboutus-card">
         <div class="card-header fg-white" style="background-image: url(http://lorempixel.com/1000/600/)">
-            Journey To Mountains
         </div>
         <div class="card-content p-2">
-            <p class="fg-gray">Posted on January 21, 2015</p>
-            Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit...
-        </div>
-        <div class="card-footer">
-            <button class="button secondary">Read More</button>
+            <p class="text-bold">Acerca de...</p>
+            Quisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendreritQuisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendreritQuisque
+            eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendreritQuisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendreritQuisque
+            eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendreritQuisque eget vestibulum nulla. Quisque quis dui quis ex ultricies efficitur vitae non felis. Phasellus quis nibh hendrerit
         </div>
     </div>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
 </body>
+<footer class="text-center shifted-content">
+    Bazar Informativo ~ 2019
+</footer>
 
 </html>
