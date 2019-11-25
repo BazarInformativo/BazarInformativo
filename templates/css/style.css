@@ -54,6 +54,7 @@ footer {
 
 #sb-avatar {
     top: 5%;
+    overflow: visible;
 }
 
 #sb-arrow {
@@ -62,4 +63,21 @@ footer {
 
 #aboutus-card {
     height: 100%;
+}
+
+#cards {
+    margin: auto;
+    width: 120%;
+}
+
+#card1,
+#card2,
+#card3,
+#card4,
+#card5,
+#card6,
+#card7,
+#card8 {
+    display: inline-block;
+    *display: inline;
 }
