@@ -34,16 +34,31 @@
                 <li class="divider"></li>
                 <li><a href="./templates/html/editions.html"><span class="mif-books icon"></span>Ediciones</a></li>
                 <li class="divider"></li>
-                <li><a href="./templates/html/contact.html"><span class="mif-contacts-mail icon"></span>Contacto</a>
-                </li>
-                <li class="divider"></li>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function() {
+                        this.page.url = "https://bazarinformativo.github.io/BazarInformativo/index.html";
+                    };
+                    (function() {
+                        var d = document,
+                            s = d.createElement('script');
+                        s.src = 'https://bazarinformativo.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
             </ul>
+            <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered
+                    by Disqus.</a></noscript>
         </aside>
         <button class="shifted-content app-bar-item c-pointer" id="sidebar-toggle">
             <span class="mif-menu fg-white mif-3x"></span>
         </button>
         <div class="shifted-content">
             <h1 class="text-center display3 fg-black" id="titleContainer">BAZAR INFORMATIVO</h1>
+        </div>
+        <div class="shifted-content">
+            <a target="_blank" href="https://www.instagram.com/bazarinformativo11/" rel="noopener noreferrer"><img alt="Instagram logo" src="./templates//imgs/instagram.png"></a>
         </div>
     </div>
     <!--Information about the page.
