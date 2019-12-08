@@ -65,19 +65,19 @@ footer {
     height: 100%;
 }
 
-#cards {
-    margin: auto;
-    width: 120%;
+#app-bar {
+    background-color: #E35F56;
 }
 
-#card1,
-#card2,
-#card3,
-#card4,
-#card5,
-#card6,
-#card7,
-#card8 {
-    display: inline-block;
-    *display: inline;
+#cards {
+    flex-flow: row wrap;
+    display: flex;
+    flex: auto;
+    margin: auto;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.column {
+    flex-direction: column;
 }
