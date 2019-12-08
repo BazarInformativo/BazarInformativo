@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" ondblclick="Metro.sidebar.close('#sb1'); return false;">
+<!--Author -- github.com/jodagito-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bazar Informativo - Ediciones</title>
+</head>
+
+<body class="shifted-content">
+    <div class="shifted-content container">
+        <embed id="edition" src="../../1.pdf" height="850px" width="100%" />
+    </div>
+    <script src=" https://cdn.metroui.org.ua/v4/js/metro.min.js "></script>
+</body>
+<footer class="text-center shifted-content ">
+    Bazar Informativo ~ 2019
+</footer>
+<script>
+    const params = new URLSearchParams(document.location.search);
+    const edition = params.get("edition");
+    pdf = document.getElementById("edition")
+    clone = pdf.cloneNode(true)
+    clone.setAttribute('src', "../media/" + edition + ".pdf")
+    pdf.parentNode.replaceChild(clone, pdf)
+</script>
+
+</html>

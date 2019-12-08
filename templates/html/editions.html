@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es" ondblclick="Metro.sidebar.close('#sb1'); return false;">
+<!--Author -- github.com/jodagito-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bazar Informativo - Ediciones</title>
+</head>
+
+<body class="shifted-content">
+    <!--Sidebar menu and application bar creation.
+
+        Sidebar menu has three options, Home, Editions and Contact.   
+    -->
+    <div class="app-bar pos-relative bg-lightRed z-1" data-role="appbar" id="app-bar" data-role-appbar="true">
+        <aside class="sidebar" data-role="sidebar" data-toggle="#sidebar-toggle" id="sb1" data-shift=".shifted-content">
+            <div class="sidebar-header bg-red" id="sb-head">
+                <a href="/" class="fg-white sub-action" onclick="Metro.sidebar.close('#sb1'); return false;">
+                    <span class="mif-arrow-left" id="sb-arrow"></span>
+                </a>
+                <div class="avatar" id="sb-avatar">
+                    <img src="../imgs/logo_icon.png">
+                </div>
+                <span class="title" id="sb-title"><b>Bazar Informativo</b></span>
+                <span class="subtitle" id="sb-subtitle">Un periódico comunitario</span>
+            </div>
+            <ul class="sidebar-menu bg-white">
+                <li><a href="index.html"><span class="mif-home icon"></span>Inicio</a></li>
+                <li class="divider"></li>
+                <li><a href="editions.html"><span class="mif-books icon"></span>Ediciones</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html"><span class="mif-contacts-mail icon"></span>Contacto</a></li>
+                <li class="divider"></li>
+            </ul>
+        </aside>
+        <button class="shifted-content app-bar-item c-pointer" id="sidebar-toggle">
+            <span class="mif-menu fg-white mif-3x"></span>
+        </button>
+        <div class="shifted-content">
+            <h1 class="text-center display3 fg-black" id="titleContainer">BAZAR INFORMATIVO</h1>
+        </div>
+    </div>
+    <div id="cards" class="shifted-content">
+        <div id="card1" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Primera Edición</div>
+                <div class="date" style="margin-left:0%">Diciembre 2018</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=1'" target="_blank"><img src="../imgs/edicion1.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card2" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Segunda Edición</div>
+                <div class="date" style="margin-left:0%">Enero 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=2'" target="_blank"><img src="../imgs/edicion2.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card3" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Tercera Edición</div>
+                <div class="date" style="margin-left:0%">Marzo 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=3'" target="_blank"><img src="../imgs/edicion3.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card4" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Cuarta Edición</div>
+                <div class="date" style="margin-left:0%"></div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=4'" target="_blank"><img src="../imgs/edicion4.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card5" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Quinta Edición</div>
+                <div class="date" style="margin-left:0%">Junio 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=5'" target="_blank"><img src="../imgs/edicion5.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card6" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Sexta Edición</div>
+                <div class="date" style="margin-left:0%">Julio 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=6'" target="_blank"><img src="../imgs/edicion6.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card7" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Séptima Edición</div>
+                <div class="date" style="margin-left:0%">Agosto 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=7'" target="_blank"><img src="../imgs/edicion7.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card8" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Octava Edición</div>
+                <div class="date" style="margin-left:0%">Septiembre 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=8'" target="_blank"><img src="../imgs/edicion8.png" style="width: 100%"></a>
+            </div>
+        </div>
+        <div id="card9" style="width: 20%">
+            <div class="card-header">
+                <div class="name" style="margin-left:0%">Novena Edición</div>
+                <div class="date" style="margin-left:0%">Octubre 2019</div>
+            </div>
+            <div class="card-content p-2">
+                <a href="javascript:;" onclick="this.href='edition.html?edition=9'" target="_blank"><img src="../imgs/edicion9.png" style="width: 100%"></a>
+            </div>
+        </div>
+    </div>
+    <script src=" https://cdn.metroui.org.ua/v4/js/metro.min.js "></script>
+</body>
+<footer class="text-center shifted-content ">
+    Bazar Informativo ~ 2019
+</footer>
+
+</html>

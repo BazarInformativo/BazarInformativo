@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es" ondblclick="Metro.sidebar.close('#sb1'); return false;">
+<!--Author -- github.com/jodagito-->
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Bazar Informativo - Contacto</title>
+</head>
+
+<body class="shifted-content">
+    <!--Sidebar menu and application bar creation.
+
+        Sidebar menu has three options, Home, Editions and Contact.   
+    -->
+    <div class="app-bar pos-relative bg-lightRed z-1" data-role="appbar" id="app-bar" data-role-appbar="true">
+        <aside class="sidebar" data-role="sidebar" data-toggle="#sidebar-toggle" id="sb1" data-shift=".shifted-content">
+            <div class="sidebar-header bg-red" id="sb-head">
+                <a href="/" class="fg-white sub-action" onclick="Metro.sidebar.close('#sb1'); return false;">
+                    <span class="mif-arrow-left" id="sb-arrow"></span>
+                </a>
+                <div class="avatar" id="sb-avatar">
+                    <img src="../imgs/logo_icon.png">
+                </div>
+                <span class="title" id="sb-title"><b>Bazar Informativo</b></span>
+                <span class="subtitle" id="sb-subtitle">Un periódico comunitario</span>
+            </div>
+            <ul class="sidebar-menu bg-white">
+                <li><a href="index.html"><span class="mif-home icon"></span>Inicio</a></li>
+                <li class="divider"></li>
+                <li><a href="editions.html"><span class="mif-books icon"></span>Ediciones</a></li>
+                <li class="divider"></li>
+                <li><a href="contact.html"><span class="mif-contacts-mail icon"></span>Contacto</a></li>
+                <li class="divider"></li>
+            </ul>
+        </aside>
+        <button class="shifted-content app-bar-item c-pointer" id="sidebar-toggle">
+            <span class="mif-menu fg-white mif-3x"></span>
+        </button>
+        <div class="shifted-content">
+            <h1 class="text-center display3 fg-black" id="titleContainer">BAZAR INFORMATIVO</h1>
+        </div>
+    </div>
+    <form class="shifted-content">
+        <div class="form-group">
+            <label>Correo electrónico</label>
+            <input type="email" />
+            <small class="text-muted">No compartiremos tu correo con nadie.</small>
+        </div>
+        <div class="form-group">
+            <label>Mensaje</label>
+            <textarea data-role="textarea" data-auto-size="true" data-max-height="200"></textarea>
+        </div>
+        <div class="form-group">
+            <button class="button success">Enviar mensaje</button>
+        </div>
+    </form>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+</body>
+<footer class="text-center shifted-content">
+    Bazar Informativo ~ 2019
+</footer>
+
+</html>
